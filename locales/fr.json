@@ -1,7 +1,0 @@
-{
-  "welcome": "Bienvenue sur notre site Web !",
-  "home": "Accueil",
-  "about": "À propos",
-  "contact": "Contact",
-  "intro": "Ceci est un site multilingue simple utilisant i18next avec JSON externe."
-}

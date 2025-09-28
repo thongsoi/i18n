@@ -1,5 +1,4 @@
 // script.js
-
 // Initialize i18next with the HTTP backend
 i18next
   .use(i18nextHttpBackend)
