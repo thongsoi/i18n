@@ -13,15 +13,7 @@
   <!-- auto-detect browser language -->
   <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/i18nextBrowserLanguageDetector.min.js"></script>
 
-  <script>
-    i18next
-    .use(i18nextHttpBackend)
-    .use(i18nextBrowserLanguageDetector) // auto detect language
-    .init({
-    fallbackLng: 'en',
-    backend: { loadPath: '/locales/{{lng}}.json' }
-    }, updateContent);
-  </script>
+
   
 </head>
 <body>

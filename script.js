@@ -1,16 +1,12 @@
 // script.js
 // Initialize i18next with the HTTP backend
 i18next
-  .use(i18nextHttpBackend)
-  .init({
-    lng: 'en', // default language
-    debug: true,
-    backend: {
-      loadPath: '/locales/{{lng}}.json' // where translations live
-    }
-  }, function(err, t) {
-    updateContent();
-  });
+    .use(i18nextHttpBackend)
+    .use(i18nextBrowserLanguageDetector) // auto detect language
+    .init({
+    fallbackLng: 'en',
+    backend: { loadPath: '/locales/{{lng}}.json' }
+    }, updateContent);
 
 // Function to update all elements with data-i18n attribute
 function updateContent() {
